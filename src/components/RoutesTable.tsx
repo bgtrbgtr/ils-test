@@ -26,7 +26,7 @@ const RoutesTable = (): JSX.Element => {
 
   return (
     <div className="table">
-      <h1>Выберите необходимый маршрут:</h1>
+      <h1 className="table_title">Выберите необходимый маршрут:</h1>
       <ConfigProvider
         theme={{
           token: {
@@ -39,6 +39,7 @@ const RoutesTable = (): JSX.Element => {
           dataSource={data}
           pagination={false}
           rowSelection={{ type: "radio", onSelect: handleRowSelection }}
+          scroll={{ x: "min-content" }}
         />
       </ConfigProvider>
     </div>

@@ -8,13 +8,35 @@
     gap: 20px;
     justify-content: space-between;
     min-height: 100%;
+
+    @media screen and (max-width: 999px) {
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 500px) {
+        padding: 10px;
+    }
 }
 
 .table {
     width: 50vw;
+
+    @media screen and (max-width: 999px) {
+        width: 100%;
+    }
+}
+
+.table_title {
+    @media screen and (max-width: 380px) {
+        font-size: 16px;
+    }
 }
 
 .map_container {
     width: 50vw;
     height: 60vh;
+
+    @media screen and (max-width: 999px) {
+        width: 100%;
+    }
 }
